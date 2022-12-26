@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500;700&display=swap");
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6b7280;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: var(--gray);
+}
+header .new-task {
+  display: flex;
+}
+header .task-input {
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin: 0.4rem;
+  flex-wrap: wrap;
+  color: var(--gray);
+  font-size: 1.25rem;
+}
+header .task-input::placeholder {
+  color: var(--gray);
+}
+header #new-task-submit {
+  color: var(--pink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+header #new-task-submit:hover {
+  opacity: 0.8;
+}
+header #new-task-submit:active {
+  opacity: 0.6;
+}
+
+main {
+  flex: 1 1 0%;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+main .task-list {
+  padding: 1rem;
+}
+main .task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+main .task-list #tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+main .task-list #tasks .task .content {
+  flex: 1 1 0%;
+}
+main .task-list #tasks .task .content .text {
+  color: var(--gray);
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+  word-wrap: break-word;
+}
+main .task-list #tasks .task .content .text :not(:read-only) {
+  color: var(--pink);
+}
+main .task-list #tasks .task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+main .task-list #tasks .task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+main .task-list #tasks .task .actions button:hover {
+  opacity: 0.8;
+}
+main .task-list #tasks .task .actions button:active {
+  opacity: 0.6;
+}
+main .task-list #tasks .task .actions .edit {
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .task-list #tasks .task .actions .delete {
+  color: crimson;
+}
+
+/*# sourceMappingURL=main.css.map */

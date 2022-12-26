@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/css/main.css" />
+    <title>Task List</title>
+  </head>
+  <body>
+    <header>
+      <h1>Task List</h1>
+      <form class="new-task-form">
+        <input
+          type="text"
+          name="title-task-name"
+          id="title-task-name"
+          class="task-input"
+          placeholder="Enter title task name"
+        />
+        <input
+          type="text"
+          name="status-task"
+          id="status-task"
+          class="task-input"
+          placeholder="Enter status task name"
+        />
+        <input
+          type="text"
+          name="created-task-time"
+          id="created-task-time"
+          class="task-input"
+          placeholder="Enter created task time"
+        />
+        <input type="submit" value="Add task" id="new-task-submit" />
+      </form>
+    </header>
+
+    <main>
+      <section class="task-list">
+        <h2>Tasks</h2>
+
+        <div id="tasks">
+          <!-- <div class="task">
+            <div class="content">
+              <input type="text" class="text" value="My shiny task" readonly />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
